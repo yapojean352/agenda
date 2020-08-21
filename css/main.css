@@ -1,0 +1,307 @@
+
+
+/*style*/
+
+header {
+
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+th {
+    height: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+td {
+    height: 100px;
+}
+
+
+
+th:nth-of-type(7),
+td:nth-of-type(7) {
+    font-weight: bold;
+}
+
+th:nth-of-type(1),
+td:nth-of-type(1) {
+    font-weight: bold;
+}
+#grille {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    user-select: none;
+    margin: auto;
+}
+
+#grille td,
+#grille th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 100px;
+    max-height: 100px;
+}
+
+.Reunions {
+    background-color: rgba(238, 226, 226, 0.651);
+
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Environnement {
+    background-color: rgba(96, 204, 247, 0.651);
+
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Sport {
+    background-color: rgba(36, 9, 134, 0.651);
+
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Famille {
+    background-color: rgba(247, 96, 96, 0.651);
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Education {
+    background-color: rgba(50, 105, 177, 0.548);
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Divertissement {
+    background-color: rgba(143, 177, 50, 0.404);
+
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Loisir {
+    background-color: rgba(143, 177, 50, 0.377);
+
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Festive {
+    background-color: rgba(244, 132, 50, 0.71);
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.Sante {
+    background-color: rgba(8, 245, 79, 0.911);
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+.Quotidien {
+    background-color: rgba(11, 56, 35, 0.911);
+    text-transform: capitalize;
+    color: rgb(248, 242, 242);
+}
+
+#grille tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#cadreM {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.form-group {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+p {
+    cursor: pointer;
+
+}
+
+#main {
+    color: rgb(35, 2, 61);
+    flex-shrink: 0;
+}
+
+
+#grille th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #8cc9ce;
+    color: white;
+}
+
+#grille td.selected {
+    background-color: #f4faaf;
+}
+
+.test {
+    background-color: #c8e8fc;
+
+}
+
+#ex1 {
+    margin-top: 20px;
+}
+
+th,
+td {
+    width: 100px;
+    height: 100px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* Bouton ajouter*/
+
+#main > p a {
+
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    width: 15%;
+    margin-right: 7rem;
+    margin-top: -5rem;
+
+    margin-left: auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+    flex-grow: 0;
+
+
+
+}
+
+
+
+/*style css du modal*/
+
+#contenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 0, 5, 0.829);
+    width: 100%;
+    height: 100%;
+
+}
+
+#Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 400px;
+    background-color: rgb(243, 245, 250);
+    width: 400px;
+    height: 400px;
+
+}
+
+.fermer {
+    float: right;
+}
+
+#modifier {
+    color: rgb(239, 248, 248);
+    background-color: rgb(24, 5, 129);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-left: 400px;
+
+}
+
+.suppr {
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 0, 0);
+}
+
+#main > form{
+    
+    display: flex;
+    margin-left: 7rem;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+     width: 60%;
+    margin-top: 6.5rem;
+
+    
+}
+#ok{
+    
+    background-color: #2eabb5;
+    align-items: flex-end;
+}
+/*Style footer*/
+
+footer {
+
+    display: flex;
+    background-color: aliceblue;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    margin-top: 10%;
+    box-sizing: border-box;
+   
+
+}
+
+footer p {
+
+    margin: 20px;
+    text-align: center;
+}
+
+.infoPlus {
+
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+/* FIN  style css du modal*/
